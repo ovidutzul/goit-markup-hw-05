@@ -166,6 +166,10 @@ a {
 .nav-link:focus,
 .current:focus {
   color: var(--background-hover-button-color);
+  padding-bottom: 26px;
+  border-bottom: 4px solid var(--background-hover-button-color);
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .business-solutions-section {
@@ -565,4 +569,37 @@ a {
 
 .bottom p {
   margin-left: 215px;
+}
+
+.modal {
+  position: fixed;
+  width: 528px;
+  height: 581px;
+  flex-shrink: 0;
+  top: 221px;
+  left: 536px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.icon-close {
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
 }

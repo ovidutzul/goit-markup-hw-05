@@ -49,7 +49,16 @@
         <!-- Business Solutions Section  -->
         <section class="business-solutions-section">
             <h1 class="business-solution">EFFECTIVE SOLUTIONS FOR <br> YOUR BUSINESS</h1>
-            <button class="order-service" type="button">Request our service</button>
+            <button data-modal-open class="order-service" type="button">Request our service</button>
+            <!-- Book Service Modal -->
+            <div class="modal" data-modal>
+                <div class="modal-content">
+                    <button class="close-btn" data-modal-close><svg class="icon-close">
+                            <use xlink:href="images/icons.svg#icon-close"></use>
+                        </svg></button>
+
+                </div>
+            </div>
         </section>
 
         <!-- About us Section -->
@@ -313,6 +322,9 @@
             </ul>
         </div>
     </footer>
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
