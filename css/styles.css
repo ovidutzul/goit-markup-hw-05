@@ -4,7 +4,7 @@
   --dark-gray-text-color: #212121;
   --light-gray-text-color: #757575;
   --transition: 250ms;
-  --cubic-standard: cubic-bezier(0.4, 0, 0.2, 1)
+  --cubic-standard: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -101,7 +101,7 @@ a {
 .icon-envelope:hover,
 .icon-smartphone:hover {
   fill: var(--background-hover-button-color);
-  transition: fill var(--transition) var(--cubic);
+  transition: fill var(--transition) var(--cubic-standard);
 }
 
 .nav-link {
@@ -236,7 +236,7 @@ a {
 
 .about-us-section {
   width: 1600px;
-  height: 1630px;
+  padding-bottom: 94px;
 }
 
 .about-us-container {
@@ -283,16 +283,23 @@ a {
 .what-we-do-container {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 75%;
   height: 386px;
   padding: 0 205px;
   background: var(--button-hover-text-color);
-  margin: 94px 0;
+  margin: 124px 0 104px;
+  padding-bottom: 94px;
 }
 
 .what-we-do-container h2 {
   padding-left: 480px;
   padding-bottom: 15px;
+  text-align: center;
+  color: var(--dark-gray-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
 }
 
 .what-we-do-container ul {
@@ -304,12 +311,13 @@ a {
   gap: 35px;
 }
 
+.what-we-do-container ul li {
+  position: relative;
+}
+
 .our-team-section h2 {
   padding-top: 94px;
   margin-bottom: 50px;
-}
-
-.chapter {
   text-align: center;
   color: var(--dark-gray-text-color);
   font-size: 36px;
@@ -318,9 +326,36 @@ a {
   letter-spacing: 1.08px;
 }
 
+.our-apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+}
+
+.what-we-do-container .our-apps h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
 .our-team-section {
-  width: 1600px;
-  height: 648px;
+  width: 100%;
   flex-shrink: 0;
   background: #f5f4fa;
   padding-bottom: 94px;
@@ -422,6 +457,15 @@ a {
   background: #fff;
 }
 
+.regular-customer-section h2 {
+  text-align: center;
+  color: var(--dark-gray-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
 .regular-customer-section ul {
   display: flex;
   justify-content: space-between;
@@ -500,6 +544,41 @@ a {
   background: var(--button-hover-text-color);
   margin-top: 25px;
   cursor: pointer;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box:hover .overlay {
+  transform: translateX(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  transform: translateX(-100%);
+  transition: transform 250ms ease;
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.overlay p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.54px;
+  padding: 63px 24px 91px;
 }
 
 .our-work-section .work-cards li:hover,
@@ -591,7 +670,6 @@ a {
 }
 
 .modal-data-open {
- 
 }
 
 .modal {
@@ -627,7 +705,7 @@ a {
   opacity: 0.3;
   transform: scale(0.01);
   pointer-events: auto;
-  }
+}
 
 .icon-close {
   fill: #fff;
