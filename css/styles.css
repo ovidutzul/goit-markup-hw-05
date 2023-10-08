@@ -182,7 +182,7 @@ a {
   content: "";
   position: absolute;
   width: 100%;
-  top: 44px;
+  top: 45px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--background-hover-button-color);
@@ -337,10 +337,7 @@ a {
   bottom: 0;
   right: 0;
   margin: 0;
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.8),
-    rgba(47, 48, 58, 0.8)
-  );
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .what-we-do-container .our-apps h3 {
@@ -675,14 +672,14 @@ a {
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal-content {
-  transition: 1000ms ease-in 1s;
+  transition: 500ms ease-in 1s;
   transform: scale(1);
   width: 528px;
   height: 581px;
@@ -700,7 +697,7 @@ a {
 .is-hidden {
   visibility: hidden;
   opacity: 0.5;
-  transition: 1000ms ease-in 1s;
+  transition: 500ms ease-in 1s;
   transform: scale(0);
   pointer-events: auto;
 }
