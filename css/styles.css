@@ -156,6 +156,8 @@ a {
 .client-icon:hover {
   fill: #2196f3;
   transition: fill var(--transition) var(--cubic-standard);
+  border-radius: 4px;
+  border: 1px solid #2196f3;
 }
 
 .phone-number {
@@ -667,7 +669,7 @@ a {
 
 .modal {
   position: fixed;
-  transition: 500ms ease-in;
+  transition: var(--transition) ease-in;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -679,7 +681,7 @@ a {
 }
 
 .modal-content {
-  transition: 500ms ease-in 1s;
+  transition: var(--transition);
   transform: scale(1);
   width: 528px;
   height: 581px;
@@ -697,7 +699,7 @@ a {
 .is-hidden {
   visibility: hidden;
   opacity: 0.5;
-  transition: 500ms ease-in 1s;
+  transition: var(--transition) 100ms;
   transform: scale(0);
   pointer-events: auto;
 }
