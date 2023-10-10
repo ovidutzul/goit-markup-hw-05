@@ -127,18 +127,13 @@ a {
   padding: 16px 0;
 }
 
-.icon-envelope:hover,
-.icon-smartphone:hover {
+.global-header ul li a:hover svg,
+.global-header ul li a:hover span,
+.global-header ul li a:focus svg,
+.global-header ul li a:focus span {
+ color: rgba(33, 150, 243, 1);
   fill: var(--background-hover-button-color);
-  transition: fill var(--transition) var(--cubic-standard);
-}
-
-.mail-address:hover,
-.mail-address:focus,
-.phone-number:hover,
-.phone-number:focus {
-  color: rgba(33, 150, 243, 1);
-  transition: color var(--transition) var(--cubic-standard);
+   transition: fill var(--transition) var(--cubic-standard);
 }
 
 .icon {
