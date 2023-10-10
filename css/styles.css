@@ -98,12 +98,6 @@ a {
   margin-bottom: -3px;
 }
 
-.icon-envelope:hover,
-.icon-smartphone:hover {
-  fill: var(--background-hover-button-color);
-  transition: fill var(--transition) var(--cubic-standard);
-}
-
 .nav-link {
   font-size: 14px;
   font-weight: 500;
@@ -131,6 +125,12 @@ a {
   width: 135px;
   margin-left: 376px;
   padding: 16px 0;
+}
+
+.icon-envelope:hover,
+.icon-smartphone:hover {
+  fill: var(--background-hover-button-color);
+  transition: fill var(--transition) var(--cubic-standard);
 }
 
 .mail-address:hover,
@@ -248,10 +248,10 @@ a {
 
 .about-us-container ul {
   display: flex;
-  max-width: 1200px;
+  max-width: 75%;
   height: 101px;
   flex-shrink: 0;
-  gap: 25px;
+  gap: 30px;
 }
 
 .about-us-container ul {
@@ -431,6 +431,22 @@ a {
   gap: 10px;
 }
 
+.our-team-section .social-media a {
+  fill: #fff;
+}
+
+.team-icon {
+  border-radius: 44px;
+  width: 44px;
+  height: 44px;
+}
+
+.team-icon:hover {
+  fill: var(--background-hover-button-color);
+  border-radius: 44px;
+  transition: fill var(--transition) var(--cubic-standard);
+}
+
 .icon-bottom {
   border-radius: 44px;
   width: 44px;
@@ -438,16 +454,8 @@ a {
   fill: rgba(255, 255, 255, 0.1);
 }
 
-.team-icon {
-  border-radius: 44px;
-  width: 44px;
-  height: 44px;
-  fill: #ffffff;
-}
-
-.team-icon:hover,
 .icon-bottom:hover {
-  fill: var(--background-hover-button-color);
+  background: var(--background-hover-button-color);
   border-radius: 44px;
   transition: fill var(--transition) var(--cubic-standard);
 }
