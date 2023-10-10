@@ -390,6 +390,7 @@ a {
 
 .social-media {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
   width: 206px;
   height: 44px;
@@ -427,19 +428,27 @@ a {
 }
 
 .our-team-section .social-media a {
-  fill: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  background-color: #fff;
+  position: relative;
+}
+
+.our-team-section .social-media a:hover,
+.our-team-section .social-media a:hover svg {
+background-color: var(--background-hover-button-color);
+fill: #fff;
+transition: background-color var(--transition) var(--cubic-standard);
 }
 
 .team-icon {
-  border-radius: 44px;
-  width: 44px;
-  height: 44px;
-}
-
-.team-icon:hover {
-  fill: var(--background-hover-button-color);
-  border-radius: 44px;
-  transition: fill var(--transition) var(--cubic-standard);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  top: 12px;
+  left: 12px;
 }
 
 .icon-bottom {
@@ -684,7 +693,7 @@ a {
 }
 
 .modal-content {
-  transition: var(--transition);
+  transition: var(--transition) var(--cubic-standard);
   transform: scale(1);
   width: 528px;
   height: 581px;
@@ -702,7 +711,7 @@ a {
 .is-hidden {
   visibility: hidden;
   opacity: 0.5;
-  transition: var(--transition) 100ms;
+  transition: transform var(--transition) 100ms var(--cubic-standard);
   transform: scale(0);
   pointer-events: auto;
 }
