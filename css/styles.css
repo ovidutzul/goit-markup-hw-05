@@ -461,7 +461,7 @@ transition: background-color var(--transition) var(--cubic-standard);
 .icon-bottom:hover {
   background: var(--background-hover-button-color);
   border-radius: 44px;
-  transition: fill var(--transition) var(--cubic-standard);
+  transition: var(--transition) var(--cubic-standard);
 }
 
 .regular-customer-section {
