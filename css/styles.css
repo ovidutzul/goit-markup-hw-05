@@ -439,7 +439,11 @@ a {
 .our-team-section .social-media a:hover svg {
 background-color: var(--background-hover-button-color);
 fill: #fff;
-transition: background-color fill var(--transition) var(--cubic-standard);
+transition:background-color var(--transition) var(--cubic-standard);
+}
+
+.our-team-section .social-media a:hover svg {
+  background: none;
 }
 
 .team-icon {
