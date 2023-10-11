@@ -133,7 +133,7 @@ a {
 .global-header ul li a:focus span {
  color: rgba(33, 150, 243, 1);
   fill: var(--background-hover-button-color);
-   transition: fill var(--transition) var(--cubic-standard);
+   transition: fill color var(--transition) var(--cubic-standard);
 }
 
 .icon {
