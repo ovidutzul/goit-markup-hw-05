@@ -131,9 +131,9 @@ a {
 .global-header ul li a:hover span,
 .global-header ul li a:focus svg,
 .global-header ul li a:focus span {
- color: rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1);
   fill: var(--background-hover-button-color);
-   transition: fill color var(--transition) var(--cubic-standard);
+  transition: fill color var(--transition) var(--cubic-standard);
 }
 
 .icon {
@@ -437,9 +437,9 @@ a {
 
 .our-team-section .social-media a:hover,
 .our-team-section .social-media a:hover svg {
-background-color: var(--background-hover-button-color);
-fill: #fff;
-transition:background-color var(--transition) var(--cubic-standard);
+  background-color: var(--background-hover-button-color);
+  fill: #fff;
+  transition: background-color var(--transition) var(--cubic-standard);
 }
 
 .our-team-section .social-media a:hover svg {
@@ -453,7 +453,7 @@ transition:background-color var(--transition) var(--cubic-standard);
   fill: #afb1b8;
   top: 12px;
   left: 12px;
-  }
+}
 
 .icon-bottom {
   border-radius: 44px;
@@ -685,7 +685,7 @@ transition:background-color var(--transition) var(--cubic-standard);
 
 .modal {
   position: fixed;
-  transition: var(--transition) ease-in;
+  transition: var(--transition) ease-in var(--cubic-standard);
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -715,7 +715,7 @@ transition:background-color var(--transition) var(--cubic-standard);
 .is-hidden {
   visibility: hidden;
   opacity: 0.5;
-  transition: transform var(--transition) 100ms var(--cubic-standard);
+  transition: transform var(--transition) var(--cubic-standard);
   transform: scale(0);
   pointer-events: auto;
 }
