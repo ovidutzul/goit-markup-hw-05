@@ -453,7 +453,7 @@ transition:background-color var(--transition) var(--cubic-standard);
   fill: #afb1b8;
   top: 12px;
   left: 12px;
-}
+  }
 
 .icon-bottom {
   border-radius: 44px;
